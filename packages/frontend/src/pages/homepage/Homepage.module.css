@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.image{
+    width: 50%;
+    height: 100%;
+    margin: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.title{
+    display: flex;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.slogan{
+margin-bottom: 50px;
+}
