@@ -2,20 +2,32 @@ import styles from "./Homepage.module.css";
 import { Flex, Image, Title, Text } from "@mantine/core";
 import buildingImage from "../../assets/vectorBuildingImage.png";
 import { useTranslation } from "react-i18next";
+import { LoginForm } from "../../system/forms/login/LoginForm";
 
 export const Homepage = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
-    <>
-      <Flex className={styles.container}>
+    <div className={styles.container}>
+      <div className={styles.leftBLock}>
         <Image className={styles.image} src={buildingImage} />
-        <Flex>
-        <Title className={styles.title}>{t("homepage.brand.name.app.title")}</Title>
-        <Text className={styles.slogan}> {t("homepage.slogan.condominium.subtext")} </Text>
-        <Text>{t("homepage.connexion.login.account.subtext")}</Text>
+      </div>
+
+      <div className={styles.rightBlock}>
+        <Flex mb="xl" direction="column">
+        <Title>
+          {t("homepage.brand.name.app.title")}
+        </Title>
+        <Text mt="sm">
+          {" "}
+          {t("homepage.slogan.condominium.subtext")}{" "}
+        </Text>
         </Flex>
-      </Flex>
-    </>
+        <Text mb="lg">
+          {t("homepage.connexion.login.account.subtext")}
+        </Text>
+        <LoginForm />
+      </div>
+    </div>
   );
 };

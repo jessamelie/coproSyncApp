@@ -1,5 +1,10 @@
 {
     "homepage.brand.name.app.title" : "CoproSync",
     "homepage.slogan.condominium.subtext" : "Your condominium made simple!",
-    "homepage.connexion.login.account.subtext" : "Log in to access your account"
+    "homepage.connexion.login.account.subtext" : "Log in to access your account",
+
+    "login.form.email.label.text" : "Email",
+    "login.form.email.label.placeholder" : "Enter your email",
+    "login.form.password.label.text" : "Password",
+    "login.form.password.label.placeholder" : "Enter your password"
 }
