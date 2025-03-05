@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { TextInput } from "@mantine/core";
 import styles from "./LoginForm.module.css"
+import { IconAt, IconLockPassword } from '@tabler/icons-react';
 
 export const LoginForm = () => {
     const { t } = useTranslation();
@@ -9,16 +10,19 @@ export const LoginForm = () => {
             <form>
                 <div className={styles.formContainer}>
                 <TextInput
-                variant="filled"
+                radius="xl"
+                type="email"
                 placeholder={t("login.form.email.label.placeholder")} 
                 label={t("login.form.email.label.text")} 
-                withAsterisk/>
+                withAsterisk
+                leftSection={<IconAt size={15}/>}/>
                 <TextInput
+                radius="xl"
                 type="password" 
                 placeholder={t("login.form.password.label.placeholder")} 
                 label={t("login.form.password.label.text")} 
-                radius="xl"
-                withAsterisk/>
+                withAsterisk
+                leftSection={<IconLockPassword size={15}/>}/>
                 </div>
             </form>
         </>
