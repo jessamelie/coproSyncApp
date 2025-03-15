@@ -1,10 +1,19 @@
 {
-    "homepage.brand.name.app.title" : "CoproSync",
-    "homepage.slogan.condominium.subtext" : "Your condominium made simple!",
-    "homepage.connexion.login.account.subtext" : "Log in to access your account",
+  "homepage.brand.name.app.title": "CoproSync",
+  "homepage.slogan.condominium.subtext": "Your condominium made simple!",
+  "homepage.connexion.login.account.subtext": "Log in to access your account",
 
-    "login.form.email.label.text" : "Email",
-    "login.form.email.label.placeholder" : "Enter your email",
-    "login.form.password.label.text" : "Password",
-    "login.form.password.label.placeholder" : "Enter your password"
+  "login.form.email.label.text": "Email",
+  "login.form.email.label.placeholder": "Enter your email",
+  "login.form.password.label.text": "Password",
+  "login.form.password.label.placeholder": "Enter your password",
+  "login.form.submit.button.text": "Login",
+  "login.form.email.error.required": "Email is required",
+  "login.form.email.error.invalid": "Invalid email",
+  "login.form.password.error.required": "Password is required",
+  "login.form.password.error.short": "Password must be at least 8 characters",
+  "login.form.password.error.uppercase": "Password must contain at least one uppercase letter",
+  "login.form.password.error.lowercase": "Password must contain at least one lowercase letter",
+  "login.form.password.error.number": "Password must contain at least one number",
+  "login.form.password.error.special": "Password must contain at least one special character (@, $, !, %, *, ?, &, #)"
 }
