@@ -5,9 +5,12 @@ import { IconAt, IconLockPassword } from "@tabler/icons-react";
 import { FieldErrors, SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { LoginSchema, LoginSchemaType } from "./LoginSchema";
+import {useNavigate} from "react-router-dom";
 
 export const LoginForm: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -20,10 +23,19 @@ export const LoginForm: React.FC = () => {
     },
   });
 
-  const onSubmit: SubmitHandler<LoginSchemaType> = (data: LoginSchemaType) =>
-    console.log(data);
-  const onError = (errors: FieldErrors<LoginSchemaType>) => console.log(errors);
+  //Using Local Storage for learning purposes
+  const onSubmit: SubmitHandler<LoginSchemaType> = async (
+    data: LoginSchemaType
+  ) => {
+    console.log("Form Data:", data);
+    const dummyToken = "defgevd4dfdc554855d";
+    localStorage.setItem("token", dummyToken);
+    console.log("✅ Token stored in Local Storage");
+    navigate("/dashboard");
+  };
 
+  const onError = (errors: FieldErrors<LoginSchemaType>) =>
+    console.log("❌ Form error:", errors);
   return (
     <form onSubmit={handleSubmit(onSubmit, onError)}>
       <div className={styles.formContainer}>
