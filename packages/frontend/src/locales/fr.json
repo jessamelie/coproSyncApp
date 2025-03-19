@@ -2,6 +2,8 @@
     "homepage.brand.name.app.title" : "CoproSync",
     "homepage.slogan.condominium.subtext" : "Votre copropriété en toute simplicité !",
     "homepage.connexion.login.account.subtext" : "Connectez-vous pour accéder à votre compte",
+    "homepage.password.forgotten.label.subtext": "Mot de passe oublié ? Cliquez ici",
+    "homepage.connexion.register.account.subtext" : "Pas encore de compte ? Inscrivez-vous",
 
     "login.form.email.label.text" : "Email",
     "login.form.email.label.placeholder" : "Entrez votre email",
@@ -15,5 +17,27 @@
     "login.form.password.error.uppercase" : "Le mot de passe doit contenir au moins une majuscule",
     "login.form.password.error.lowercase" : "Le mot de passe doit contenir au moins une minuscule", 
     "login.form.password.error.number" : "Le mot de passe doit contenir au moins un chiffre",
-    "login.form.password.error.special" : "Le mot de passe doit contenir au moins un caractère spécial (@, $, !, %, *, ?, &, #)"
+    "login.form.password.error.special" : "Le mot de passe doit contenir au moins un caractère spécial (@, $, !, %, *, ?, &, #)",
+
+    "register.page.title.text": "Créer votre compte",
+    "register.form.lastname.label.text": "Nom",
+    "register.form.lastname.label.placeholder": "Entrez votre nom",
+    "register.form.firstname.label.text": "Prénom",
+    "register.form.firstname.label.placeholder": "Entrez votre prénom",
+    "register.form.phone.number.label.text": "N° de téléphone professionnel",
+    "register.form.phone.number.label.placeholder": "Entrez votre n° de téléphone professionnel",
+    "register.form.address.label.text": "Adresse de la copropriété",
+    "register.form.address.label.placeholder": "Entrez l'adresse de la copropriété",
+    "register.form.postal.code.label.text": "Code postal",
+    "register.form.postal.code.label.placeholder": "Entrez votre code postal",
+    "register.form.appartment.number.label.text": "Nombre de lots",
+    "register.form.appartment.number.label.placeholder": "Entrez le nombre de lots",
+    "register.form.email.label.text": "Email",
+    "register.form.email.label.placeholder": "Entrez votre email",
+    "register.form.password.label.text": "Mot de passe",
+    "register.form.password.label.placeholder": "Entrez votre mot de passe",
+    "register.form.password.confirmed.label.text": "Confirmez votre mot de passe",
+    "register.form.password.confirmed.label.placeholder": "Confirmez votre mot de passe"
+    
+
 }

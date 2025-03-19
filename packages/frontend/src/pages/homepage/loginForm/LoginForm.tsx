@@ -65,6 +65,7 @@ export const LoginForm: React.FC = () => {
           color="#818787"
           radius="md"
           mt="sm"
+          mb="md"
         >
           {t("login.form.submit.button.text")}
         </Button>

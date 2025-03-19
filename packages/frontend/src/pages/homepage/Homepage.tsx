@@ -2,7 +2,7 @@ import styles from "./Homepage.module.css";
 import { Flex, Image, Title, Text } from "@mantine/core";
 import buildingImage from "../../assets/vectorBuildingImage.png";
 import { useTranslation } from "react-i18next";
-import { LoginForm } from "../../system/forms/login/LoginForm";
+import { LoginForm } from "./loginForm/LoginForm";
 
 export const Homepage = () => {
   const { t } = useTranslation();
@@ -26,7 +26,15 @@ export const Homepage = () => {
         <Text mb="lg">
           {t("homepage.connexion.login.account.subtext")}
         </Text>
-        <LoginForm />
+        <LoginForm/>
+        <Text 
+        size="sm"
+        mb="xl">
+          {t("homepage.password.forgotten.label.subtext")}
+        </Text>       
+        <Text>
+          {t("homepage.connexion.register.account.subtext")}
+        </Text>
       </div>
     </div>
   );

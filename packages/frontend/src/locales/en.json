@@ -2,6 +2,8 @@
   "homepage.brand.name.app.title": "CoproSync",
   "homepage.slogan.condominium.subtext": "Your condominium made simple!",
   "homepage.connexion.login.account.subtext": "Log in to access your account",
+  "homepage.password.forgotten.label.text": "Missing password? Click here",
+  "homepage.connexion.register.account.subtext" : "Don't have an account yet? Sign up",
 
   "login.form.email.label.text": "Email",
   "login.form.email.label.placeholder": "Enter your email",
@@ -15,5 +17,26 @@
   "login.form.password.error.uppercase": "Password must contain at least one uppercase letter",
   "login.form.password.error.lowercase": "Password must contain at least one lowercase letter",
   "login.form.password.error.number": "Password must contain at least one number",
-  "login.form.password.error.special": "Password must contain at least one special character (@, $, !, %, *, ?, &, #)"
+  "login.form.password.error.special": "Password must contain at least one special character (@, $, !, %, *, ?, &, #)",
+
+  "register.page.title.text": "Create your account",
+  "register.form.lastname.label.text": "Last name",
+  "register.form.lastname.label.placeholder": "Enter your last name",
+  "register.form.firstname.label.text": "First name",
+  "register.form.firstname.label.placeholder": "Enter your first name",
+  "register.form.phone.number.label.text": "Professional phone number",
+  "register.form.phone.number.label.placeholder": " Enter your professional phone number",
+  "register.form.address.label.text": "Condominium address",
+  "register.form.address.label.placeholder": "Enter the condominium address",
+  "register.form.postal.code.label.text": "Area code",
+  "register.form.postal.code.label.placeholder": "Enter your area code",
+  "register.form.appartment.number.label.text": "Number of lots",
+  "register.form.appartment.number.label.placeholder": "Enter the number of lots",
+  "register.form.email.label.text": "Email",
+  "register.form.email.label.placeholder": "Enter your email",
+  "register.form.password.label.text": "Password",
+  "register.form.password.label.placeholder": "Enter your password",
+  "register.form.password.confirmed.label.text": "Confirm your password",
+  "register.form.password.confirmed.label.placeholder": "Confirm your password"
+  
 }
