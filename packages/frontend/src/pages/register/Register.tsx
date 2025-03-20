@@ -1,3 +1,4 @@
+import styles from './Register.module.css';
 import { useTranslation } from "react-i18next";
 
 export const Register = () => {
