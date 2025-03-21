@@ -11,17 +11,9 @@ export const RegisterSchema = (t: (key: string) => string) =>
         .string()
         .trim()
         .nonempty({ message: t("register.form.firstname.error.required") }),
-      phoneNumber: z.string().trim(),
-      adress: z
-        .string()
-        .trim()
-        .nonempty({ message: t("register.form.adress.error.required") }),
-      lotsNumber: z
-        .string()
-        .trim()
-        .nonempty({
-          message: t("register.form.appartment.number.error.required"),
-        }),
+      phoneNumber: z
+      .string()
+      .trim(),
       email: z
         .string()
         .trim()

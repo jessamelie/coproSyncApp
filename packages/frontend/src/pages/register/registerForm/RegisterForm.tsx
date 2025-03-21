@@ -13,19 +13,18 @@ export const RegisterForm: React.FC = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isValid, isSubmitting},
   } = useForm<RegisterSchemaType>({
     resolver: zodResolver(RegisterSchema(t)),
     defaultValues: {
       lastName: "",
       firstName: "",
       phoneNumber: "",
-      adress: "",
-      lotsNumber: "",
       email: "",
       password: "",
       passwordConfirmation: "",
     },
+    mode: "onChange", 
   });
 
   const onSubmit: SubmitHandler<RegisterSchemaType> = async (
@@ -86,24 +85,6 @@ export const RegisterForm: React.FC = () => {
         />
         <TextInput
           radius="xl"
-          type="text"
-          placeholder={t("register.form.address.label.placeholder")}
-          label={t("register.form.address.label.text")}
-          withAsterisk
-          {...register("adress")}
-          error={errors.adress?.message}
-        />
-        <TextInput
-          radius="xl"
-          type="text"
-          placeholder={t("register.form.appartment.number.label.placeholder")}
-          label={t("register.form.appartment.number.label.text")}
-          withAsterisk
-          {...register("lotsNumber")}
-          error={errors.lotsNumber?.message}
-        />
-        <TextInput
-          radius="xl"
           type="email"
           placeholder={t("register.form.email.label.placeholder")}
           label={t("register.form.email.label.text")}
@@ -136,6 +117,7 @@ export const RegisterForm: React.FC = () => {
           radius="md"
           mt="sm"
           mb="md"
+          disabled={!isValid || isSubmitting}
         >
           {t("register.form.submit.button.text")}
         </Button>

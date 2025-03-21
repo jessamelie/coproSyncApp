@@ -8,10 +8,10 @@ export const Register = () => {
   const { t } = useTranslation();
   return (
     <div className={styles.container}>
-        <Flex direction="column" justify="center" h="100%" mx="auto">
+        <Flex direction="column" justify="center" h="100%" mx="auto" my="auto">
 
       <div className={styles.leftBLock}>
-          <Title order={1} mb="xl">
+          <Title order={1} mb="md">
             {t("register.page.title.text")}
           </Title>
           <RegisterForm />
