@@ -5,11 +5,13 @@ import { IconAt, IconLockPassword } from "@tabler/icons-react";
 import { FieldErrors, SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { LoginSchema, LoginSchemaType } from "./LoginSchema";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 export const LoginForm: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const [errorMessage, setErrorMessage] = useState("");
 
   const {
     register,
@@ -23,22 +25,33 @@ export const LoginForm: React.FC = () => {
     },
   });
 
-  //Using Local Storage for learning purposes
-  const onSubmit: SubmitHandler<LoginSchemaType> = async (
-    data: LoginSchemaType
-  ) => {
+  const onSubmit: SubmitHandler<LoginSchemaType> = async (data) => {
     console.log("Form Data:", data);
-    const dummyToken = "defgevd4dfdc554855d";
-    localStorage.setItem("token", dummyToken);
-    console.log("✅ Token stored in Local Storage");
-    navigate("/dashboard");
+    const storedUsers = JSON.parse(localStorage.getItem("users") || "[]");
+
+    const user = storedUsers.find(
+      (user: any) => user.email === data.email && user.password === data.password
+    );
+
+    if (user) {
+      const dummyToken = "defgevd4dfdc554855d";
+      localStorage.setItem("token", dummyToken);
+      localStorage.setItem("loggedInUser", JSON.stringify(user));
+      console.log("✅ Utilisateur connecté, token stocké.");
+      navigate("/dashboard");
+    } else {
+      setErrorMessage(t("login.form.user.not.found.error"));
+    }
   };
 
-  const onError = (errors: FieldErrors<LoginSchemaType>) =>
+  const onError = (errors: FieldErrors<LoginSchemaType>) => {
     console.log("❌ Form error:", errors);
+  };
+
   return (
     <form onSubmit={handleSubmit(onSubmit, onError)}>
       <div className={styles.formContainer}>
+        {errorMessage && <p style={{ color: "red", textAlign: "center" }}>{errorMessage}</p>}
         <TextInput
           radius="xl"
           type="email"
@@ -51,7 +64,6 @@ export const LoginForm: React.FC = () => {
         />
         <PasswordInput
           radius="xl"
-          type="password"
           placeholder={t("login.form.password.label.placeholder")}
           label={t("login.form.password.label.text")}
           withAsterisk

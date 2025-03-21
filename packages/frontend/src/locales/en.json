@@ -18,6 +18,7 @@
   "login.form.password.error.lowercase": "Password must contain at least one lowercase letter",
   "login.form.password.error.number": "Password must contain at least one number",
   "login.form.password.error.special": "Password must contain at least one special character (@, $, !, %, *, ?, &, #)",
+  "login.form.user.not.found.error":"User not found",
 
   "register.page.title.text": "Create your account",
   "register.form.lastname.label.text": "Last name",

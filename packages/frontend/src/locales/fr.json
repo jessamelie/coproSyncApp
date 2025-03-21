@@ -18,6 +18,7 @@
     "login.form.password.error.lowercase" : "Le mot de passe doit contenir au moins une minuscule", 
     "login.form.password.error.number" : "Le mot de passe doit contenir au moins un chiffre",
     "login.form.password.error.special" : "Le mot de passe doit contenir au moins un caractère spécial (@, $, !, %, *, ?, &, #)",
+    "login.form.user.not.found.error":"Utilisateur non trouvé",
 
     "register.page.title.text": "Créez votre compte",
     "register.form.lastName.label.text": "Nom",

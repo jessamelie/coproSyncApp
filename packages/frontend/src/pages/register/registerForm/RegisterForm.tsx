@@ -49,7 +49,7 @@ export const RegisterForm: React.FC = () => {
     localStorage.setItem("users", JSON.stringify(storedUsers));
     alert(t("register.form.account.created.success.alert"));
     console.log("✅​ Users:", storedUsers);
-    navigate("/login");
+    navigate("/");
   };
 
   const onError = (errors: FieldErrors<RegisterSchemaType>) =>
