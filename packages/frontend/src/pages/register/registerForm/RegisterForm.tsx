@@ -48,6 +48,7 @@ export const RegisterForm: React.FC = () => {
     storedUsers.push(newUsers);
     localStorage.setItem("users", JSON.stringify(storedUsers));
     alert(t("register.form.account.created.success.alert"));
+    console.log("✅​ Users:", storedUsers);
     navigate("/login");
   };
 
