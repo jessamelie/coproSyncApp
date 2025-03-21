@@ -52,5 +52,7 @@
   "register.form.password.confirmation.label.placeholder": "Confirm your password",
   "register.form.password.confirmation.error.required": "Password confirmation is required",
   "register.form.password.confirmation.error.match": "Passwords do not match",
-  "register.form.submit.button.text": "Validate your registration"
+  "register.form.submit.button.text": "Validate your registration",
+  "register.form.user.already.exist.alert": "User already exists",
+  "register.form.account.created.success.alert": "Account created successfully"
 }

@@ -52,6 +52,8 @@
     "register.form.password.confirmation.label.placeholder": "Confirmez votre mot de passe",
     "register.form.password.confirmation.error.required": "La confirmation du mot de passe est obligatoire",
     "register.form.password.confirmation.error.match": "Les mots de passe ne correspondent pas",
-    "register.form.submit.button.text": "Valider votre inscription"
+    "register.form.submit.button.text": "Valider votre inscription",
+    "register.form.user.already.exist.alert": "Cet utilisateur existe déjà",
+    "register.form.account.created.success.alert": "Compte créé avec succès"
     
 }
