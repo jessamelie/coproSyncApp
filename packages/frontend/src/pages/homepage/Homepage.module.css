@@ -20,10 +20,20 @@
     padding: 0 60px;
   }
 
-  .image {
+.image {
     margin: 80px;
     max-width: 90%;
     max-height: 80%;
     object-fit: cover;
   }
+
+.link {
+  cursor: pointer;
+  transition: "color 0.3s ease";
+  text-decoration: "none";
+}
+.link:hover {
+  color:#21caa8
+}
+
 

@@ -3,7 +3,7 @@
     "homepage.slogan.condominium.subtext" : "Votre copropriété en toute simplicité !",
     "homepage.connexion.login.account.subtext" : "Connectez-vous pour accéder à votre compte",
     "homepage.password.forgotten.label.subtext": "Mot de passe oublié ? Cliquez ici",
-    "homepage.connexion.register.account.subtext" : "Pas encore de compte ? Inscrivez-vous",
+    "homepage.connexion.register.account.subtext" : "Pas encore de compte ? Inscrivez-vous ici",
 
     "login.form.email.label.text" : "Email",
     "login.form.email.label.placeholder" : "Entrez votre email",
