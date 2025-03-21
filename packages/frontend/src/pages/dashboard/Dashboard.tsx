@@ -1,9 +1,8 @@
-import styles from "./Dashboard.module.css";
+import { Layout } from "./layout/Layout";
+
 
 export const Dashboard = () => {
   return (
-    <div>
-      <h1>Dashboard</h1>
-    </div>
+    <Layout/>
   );
 };
