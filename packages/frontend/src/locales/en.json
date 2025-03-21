@@ -41,7 +41,7 @@
   "register.form.email.error.required": "Email is required",
   "register.form.email.error.invalid": "Invalid email",
   "register.form.password.label.text": "Password",
-  "register.form.password.label.placeholder": "Enter your password",
+  "register.form.password.label.placeholder": "Choose your password",
   "register.form.password.error.required": "Password is required",
   "register.form.password.error.short": "Password must be at least 8 characters",
   "register.form.password.error.uppercase": "Password must contain at least one uppercase letter",
@@ -51,6 +51,6 @@
   "register.form.password.confirmation.label.text": "Confirm your password",
   "register.form.password.confirmation.label.placeholder": "Confirm your password",
   "register.form.password.confirmation.error.required": "Password confirmation is required",
-  "register.form.password.confirmation.error.match": "Passwords do not match"
-  
+  "register.form.password.confirmation.error.match": "Passwords do not match",
+  "register.form.submit.button.text": "Validate your registration"
 }

@@ -5,7 +5,6 @@
 }
 
 .leftBlock {
-    background-color: brown;
     display: flex;
     justify-content: center;
     align-items: center;

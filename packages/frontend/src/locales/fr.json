@@ -19,13 +19,13 @@
     "login.form.password.error.number" : "Le mot de passe doit contenir au moins un chiffre",
     "login.form.password.error.special" : "Le mot de passe doit contenir au moins un caractère spécial (@, $, !, %, *, ?, &, #)",
 
-    "register.page.title.text": "Créer votre compte",
-    "register.form.lastname.label.text": "Nom",
-    "register.form.lastname.label.placeholder": "Entrez votre nom",
-    "register.form.lastname.error.required": "Le nom est obligatoire",
-    "register.form.firstname.label.text": "Prénom",
-    "register.form.firstname.label.placeholder": "Entrez votre prénom",
-    "register.form.firstname.error.required": "Le prénom est obligatoire",
+    "register.page.title.text": "Créez votre compte",
+    "register.form.lastName.label.text": "Nom",
+    "register.form.lastName.label.placeholder": "Entrez votre nom",
+    "register.form.lastName.error.required": "Le nom est obligatoire",
+    "register.form.firstName.label.text": "Prénom",
+    "register.form.firstName.label.placeholder": "Entrez votre prénom",
+    "register.form.firstName.error.required": "Le prénom est obligatoire",
     "register.form.phone.number.label.text": "N° de téléphone professionnel",
     "register.form.phone.number.label.placeholder": "Entrez votre n° de téléphone professionnel",
     "register.form.address.label.text": "Adresse de la copropriété",
@@ -41,7 +41,7 @@
     "register.form.email.error.required": "L'email est obligatoire",
     "register.form.email.error.invalid": "L'email n'est pas valide",
     "register.form.password.label.text": "Mot de passe",
-    "register.form.password.label.placeholder": "Entrez votre mot de passe",
+    "register.form.password.label.placeholder": "Choissisez votre mot de passe",
     "register.form.password.error.required" : "Le mot de passe est obligatoire",
     "register.form.password.error.short" : "Le mot de passe doit contenir au moins 8 caractères",
     "register.form.password.error.uppercase" : "Le mot de passe doit contenir au moins une majuscule",
@@ -51,6 +51,7 @@
     "register.form.password.confirmation.label.text": "Confirmez votre mot de passe",
     "register.form.password.confirmation.label.placeholder": "Confirmez votre mot de passe",
     "register.form.password.confirmation.error.required": "La confirmation du mot de passe est obligatoire",
-    "register.form.password.confirmation.error.match": "Les mots de passe ne correspondent pas"
+    "register.form.password.confirmation.error.match": "Les mots de passe ne correspondent pas",
+    "register.form.submit.button.text": "Valider votre inscription"
     
 }
