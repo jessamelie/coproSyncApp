@@ -21,8 +21,12 @@
     "dashboard.side.navbar.dashboard.view.label" : "Dashboard",
     "dashboard.side.navbar.agenda.view.label" : "Agenda",
     "dashboard.side.navbar.message.view.label" : "Messagerie",
-    "dashboard.side.navbar.condominium.view.label" : "Copropriété",
-    "dashboard.side.navbar.administrative.label" : "Administration",
-    "dashboard.side.navbar.finances.label" : "Finances",
-    "dashboard.side.navbar.services.label" : "Prestations"
+    "dashboard.side.navbar.condominium.label" : "Copropriété",
+    "dashboard.side.navbar.administrative.management.view.label" : "Gestion Administrative",
+    "dashboard.side.navbar.technical.management.view.label" : "Gestion Technique",
+    "dashboard.side.navbar.financial.management.view.label" : "Gestion Financière",
+    "dashboard.side.navbar.team.label" : "Équipes",
+    "dashboard.side.navbar.profile.view.label" : "Vos informations",
+    "dashboard.side.navbar.coowners.view.label" : "Co-propriétaires",
+    "dashboard.side.navbar.union.concil.view.label" : "Conseil Syndical"
 }

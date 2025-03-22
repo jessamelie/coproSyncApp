@@ -36,7 +36,6 @@ export const Layout = () => {
               <IconUser
                 className={styles.profileIcon}
                 size={35}
-                onClick={() => navigate("/profile")}
               />
             </Avatar>
           </Flex>
@@ -66,14 +65,47 @@ export const Layout = () => {
           >
             {t("dashboard.side.navbar.message.view.label")}
           </div>
+          <div>
+            {t("dashboard.side.navbar.condominium.label")}
+          </div>
           <div
             className={styles.navLink}
-            onClick={() => navigate("/dashboard/copropriete")}
+            onClick={() => navigate("/dashboard/administration")}
           >
-            {t("dashboard.side.navbar.condominium.view.label")}
+            {t("dashboard.side.navbar.administrative.management.view.label")}
+          </div>
+          <div
+            className={styles.navLink}
+            onClick={() => navigate("/dashboard/technical")}
+          >
+            {t("dashboard.side.navbar.technical.management.view.label")}
+          </div>
+          <div
+            className={styles.navLink}
+            onClick={() => navigate("/dashboard/financial")}
+          >
+            {t("dashboard.side.navbar.financial.management.view.label")}
           </div>
           <div>
-            {t("dashboard.side.navbar.administrative.label")}
+            {t("dashboard.side.navbar.team.label")}
+          </div>
+          <div
+            className={styles.navLink}
+            onClick={() => navigate("/dashboard/profile")}
+          >
+            {t("dashboard.side.navbar.profile.view.label")}
+          </div>
+          <div
+            className={styles.navLink}
+            onClick={() => navigate("/dashboard/co_owners")}
+          >
+            {t("dashboard.side.navbar.coowners.view.label")}
+          </div>
+          <div
+            className={styles.navLink}
+            onClick={() => navigate("/dashboard/union_council")}
+          >
+            {t("dashboard.side.navbar.union.concil.view.label")}
           </div>
         </div>
       </AppShell.Navbar>
