@@ -14,7 +14,7 @@ function App() {
         <Route path="administration" element={<h1>Gestion administrative</h1>}/>
         <Route path="technical" element={<h1>Gestion technique</h1>} />
         <Route path="financial" element={<h1>Gestion financière</h1>} />
-        <Route path="profile" element={<h1>Votre profile</h1>} />
+        <Route path="profile" element={<h1>Votre profil</h1>} />
         <Route path="union_council" element={<h1>Conseil syndical</h1>} />
         <Route path="co_owners" element={<h1>Conseil syndical</h1>} />
       </Route>

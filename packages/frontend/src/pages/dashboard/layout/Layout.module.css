@@ -1,36 +1,36 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    padding: 1rem 2rem;
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
-.profileIcon {
-    cursor: pointer;
+.icons {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .navLinks {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
-  }
-  
-  .navLink {
-    cursor: pointer;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-weight: 500;
-    transition: background 0.3s ease;
-  }
-  
-  .navLink:hover {
-    background-color: #f0f0f0;
-  }
+.navLabel {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.navCategory {
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.navLink {
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #40cbc7;
+}

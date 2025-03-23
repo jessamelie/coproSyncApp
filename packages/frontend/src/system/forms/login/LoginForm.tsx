@@ -68,6 +68,7 @@ export const LoginForm: React.FC = () => {
         >
           {t("login.form.submit.button.text")}
         </Button>
+        //TODO: Add Forgot Password Link
       </div>
     </form>
   );

@@ -1,15 +1,15 @@
 import styles from "./Layout.module.css";
-import {
-  AppShell,
-  Avatar,
-  Burger,
-  Flex,
-  Group,
-  Title,
-} from "@mantine/core";
+import { AppShell, Avatar, Burger, Flex, Group, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { useTranslation } from "react-i18next";
-import { IconUser } from "@tabler/icons-react";
+import {
+  IconFriends,
+  IconLayoutDashboard,
+  IconBuildings,
+  IconUser,
+  IconBellRinging,
+  IconLogout,
+} from "@tabler/icons-react";
 import { Outlet, useNavigate } from "react-router-dom";
 
 export const Layout = () => {
@@ -32,19 +32,20 @@ export const Layout = () => {
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
           <Flex className={styles.header}>
             <Title order={2}>{t("homepage.brand.name.app.title")}</Title>
-            <Avatar size="lg">
-              <IconUser
-                className={styles.profileIcon}
-                size={35}
-              />
-            </Avatar>
+            <Flex className={styles.icons}>
+              <IconBellRinging style={{ cursor: "pointer" }} size={25} />
+              <Avatar size="lg">
+                <IconUser style={{ cursor: "pointer" }} size={40} />
+              </Avatar>
+            </Flex>
           </Flex>
         </Group>
       </AppShell.Header>
 
-      <AppShell.Navbar p="sm">
-        <div className={styles.navLinks}>
-          <div>
+      <AppShell.Navbar p="sm" style={{ backgroundColor: "#fafafa" }}>
+        <Flex className={styles.navCategory}>
+          <div className={styles.navLabel}>
+            <IconLayoutDashboard /> {""}
             {t("dashboard.side.navbar.general.label")}
           </div>
           <div
@@ -65,7 +66,11 @@ export const Layout = () => {
           >
             {t("dashboard.side.navbar.message.view.label")}
           </div>
-          <div>
+        </Flex>
+
+        <Flex className={styles.navCategory}>
+          <div className={styles.navLabel}>
+            <IconBuildings /> {""}
             {t("dashboard.side.navbar.condominium.label")}
           </div>
           <div
@@ -86,7 +91,11 @@ export const Layout = () => {
           >
             {t("dashboard.side.navbar.financial.management.view.label")}
           </div>
-          <div>
+        </Flex>
+
+        <Flex className={styles.navCategory}>
+          <div className={styles.navLabel}>
+            <IconFriends /> {""}
             {t("dashboard.side.navbar.team.label")}
           </div>
           <div
@@ -107,10 +116,16 @@ export const Layout = () => {
           >
             {t("dashboard.side.navbar.union.concil.view.label")}
           </div>
-        </div>
+        </Flex>
+        <Flex mt={150}>
+          <IconLogout />
+          <div style={{ cursor: "pointer" }} onClick={() => navigate("/")}>
+            {t("dashboard.side.navbar.log.out.label")}
+          </div>
+        </Flex>
       </AppShell.Navbar>
 
-      <AppShell.Main>
+      <AppShell.Main style={{ backgroundColor: "#eff3f4" }}>
         <Outlet />
       </AppShell.Main>
     </AppShell>

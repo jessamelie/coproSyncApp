@@ -15,5 +15,19 @@
   "login.form.password.error.uppercase": "Password must contain at least one uppercase letter",
   "login.form.password.error.lowercase": "Password must contain at least one lowercase letter",
   "login.form.password.error.number": "Password must contain at least one number",
-  "login.form.password.error.special": "Password must contain at least one special character (@, $, !, %, *, ?, &, #)"
+  "login.form.password.error.special": "Password must contain at least one special character (@, $, !, %, *, ?, &, #)",
+
+  "dashboard.side.navbar.general.label": "General",
+  "dashboard.side.navbar.dashboard.view.label": "Dashboard",
+  "dashboard.side.navbar.agenda.view.label": "Agenda",
+  "dashboard.side.navbar.message.view.label": "Messaging",
+  "dashboard.side.navbar.condominium.label": "Condominium",
+  "dashboard.side.navbar.administrative.management.view.label": "Administrative Management",
+  "dashboard.side.navbar.technical.management.view.label": "Technical Management",
+  "dashboard.side.navbar.financial.management.view.label": "Financial Management",
+  "dashboard.side.navbar.team.label": "Teams",
+  "dashboard.side.navbar.profile.view.label": "Your information",
+  "dashboard.side.navbar.coowners.view.label": "Co-owners",
+  "dashboard.side.navbar.union.concil.view.label": "Union Council",
+  "dashboard.side.navbar.log.out.label": "Log out"
 }
