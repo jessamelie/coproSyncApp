@@ -6,7 +6,7 @@ export const LoginSchema =(t: (key: string) => string) => z.object({
     .trim()
     .nonempty({ message: t("login.form.email.error.required") })
     .email({ message: t("login.form.email.error.invalid") }),
-  password: z
+    password: z
     .string()
     .nonempty({ message: t("login.form.password.error.required") })
     .min(8, { message: t("login.form.password.error.short") })
