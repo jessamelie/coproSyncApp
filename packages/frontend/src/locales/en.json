@@ -29,5 +29,6 @@
   "dashboard.side.navbar.profile.view.label": "Your information",
   "dashboard.side.navbar.coowners.view.label": "Co-owners",
   "dashboard.side.navbar.union.concil.view.label": "Union Council",
-  "dashboard.side.navbar.log.out.label": "Log out"
+  "dashboard.side.navbar.log.out.label": "Log out",
+  "dashboard.searchbar.placeholder": "Search"
 }

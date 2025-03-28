@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { Dashboard } from "./pages/dashboard/Dashboard";
 import { Homepage } from "./pages/homepage/Homepage";
+import { Profile } from "./pages/dashboard/profile/Profile";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="union_council" element={<h1>Conseil syndical</h1>} />
         <Route path="co_owners" element={<h1>Conseil syndical</h1>} />
       </Route>
+      <Route path="/profile" element={<Profile/>} />
     </Routes>
   );
 }

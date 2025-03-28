@@ -11,6 +11,7 @@ import {
   IconLogout,
 } from "@tabler/icons-react";
 import { Outlet, useNavigate } from "react-router-dom";
+import { SearchBar } from "./searchBar/SearchBar";
 
 export const Layout = () => {
   const { t } = useTranslation();
@@ -33,9 +34,10 @@ export const Layout = () => {
           <Flex className={styles.header}>
             <Title order={2}>{t("homepage.brand.name.app.title")}</Title>
             <Flex className={styles.icons}>
+              <SearchBar  />
               <IconBellRinging style={{ cursor: "pointer" }} size={25} />
               <Avatar size="lg">
-                <IconUser style={{ cursor: "pointer" }} size={40} />
+                <IconUser style={{ cursor: "pointer" }} size={40} onClick={() => navigate("/profile")}/>
               </Avatar>
             </Flex>
           </Flex>

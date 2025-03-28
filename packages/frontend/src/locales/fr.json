@@ -29,5 +29,6 @@
     "dashboard.side.navbar.profile.view.label" : "Vos informations",
     "dashboard.side.navbar.coowners.view.label" : "Co-propriétaires",
     "dashboard.side.navbar.union.concil.view.label" : "Conseil Syndical",
-    "dashboard.side.navbar.log.out.label": "Se déconnecter"
+    "dashboard.side.navbar.log.out.label": "Se déconnecter",
+    "dashboard.searchbar.placeholder": "Rechercher"
 }
