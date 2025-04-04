@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,5 +19,20 @@
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
     "typescript-eslint": "^8.26.0"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.17.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/react": "^19.0.10",
+    "@vitejs/plugin-react": "^4.3.4",
+    "i18next": "^24.2.2",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "jsdom": "^26.0.0",
+    "react": "^19.0.0",
+    "react-i18next": "^15.4.1",
+    "react-router-dom": "^7.3.0",
+    "typescript": "~5.7.2",
+    "vitest": "^3.0.9"
   }
 }
