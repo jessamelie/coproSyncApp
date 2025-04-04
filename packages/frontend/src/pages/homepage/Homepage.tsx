@@ -11,20 +11,16 @@ export const Homepage = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.leftBLock}>
+      <>
         <Image className={styles.image} src={buildingImage} />
-      </div>
-
-      <div className={styles.rightBlock}>
-        <Flex mb="xl" direction="column">
-        <Title>
+      </>
+        <Flex className={styles.rightBlock} mb="xl" direction="column">
+        <Title mb="sm">
           {t("homepage.brand.name.app.title")}
         </Title>
-        <Text mt="sm">
-          {" "}
-          {t("homepage.slogan.condominium.subtext")}{" "}
+        <Text mb="xl">
+          {t("homepage.slogan.condominium.subtext")}
         </Text>
-        </Flex>
         <Text mb="lg">
           {t("homepage.connexion.login.account.subtext")}
         </Text>
@@ -36,10 +32,10 @@ export const Homepage = () => {
         </Text>       
         <Text size="sm"
         className={styles.link}
-         onClick={() => navigate("/register")}>
+        onClick={() => navigate("/register")}>
           {t("homepage.connexion.register.account.subtext")}
         </Text>
+           </Flex>
       </div>
-    </div>
   );
 };

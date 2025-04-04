@@ -1,25 +1,81 @@
-
 .container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .leftBlock {
-    width: 50%;
-    display: flex;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.leftBlock {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftContent {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rightBlock {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  max-width: 90%;
+  max-height: 80%;
+  object-fit: cover;
+}
+
+/* Laptops */
+@media (max-width: 1024px) {
+  .container {
     flex-direction: column;
+    height: auto;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    padding-left: 5%;
-    padding-right: 5%;     
   }
-  
+
+  .leftBlock {
+    justify-content: center;
+    width: 75%;
+  }
+
   .rightBlock {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
   }
-  
+}
+
+/* Pads */
+@media (max-width: 768px) {
+  .leftBlock {
+    justify-content: center;
+    width: 75%;
+  }
+
+  .rightBlock {
+    margin: 20px;
+  }
+
+  .leftContent {
+    width: 100%;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 425px) {
+  .leftBlock {
+    justify-content: center;
+    width: 95%;
+  }
+  .rightBlock {
+    height: 100%;
+    width: 100%;
+  }
+}
